@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+div, header, footer, main, nav {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+main {
+    margin: 0;
+}
+header {
+    margin: 0;
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.main-menu ul {
+    display: inline;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.main-menu a {
+    color:black;
+    text-decoration: none;
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
+    font-size:18px;
+    color:black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}   
+.footer a {
+    color:white;
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;;
+    font-size:18px;
+}
+
+a:hover {
+    color:orange;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+p {
+    text-align: justify;
+}
+
+#number {
+    padding: 0;
+}
+
+.avatar {
+    margin: 0;
+    height: 550px;
+    width:auto;
+    text-align: left;
+}
+
+.avatar > img {
+    height: 100%;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    text-align: center;
+}
+
+#advantage > ul {
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.main-menu a.active {
+    color: tomato;
+}
+
+@media screen and (max-width: 800px) {
+    .avatar img {
+        width: 500px;
+        height: auto;
+    }
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    .avatar img {
+        width: 100%;
+        height: auto;
+    }
+    table, th, td {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table, th, td {
+        font-size: 14px;
+    }
+    table {
+        width: 100%;
+    }
+}
